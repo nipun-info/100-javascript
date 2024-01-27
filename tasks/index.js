@@ -1,4 +1,4 @@
-
+// task 16.1 :
 var payment = 1000;
 var orange = 200; var apples = 450;
 var purchesFruit = orange + apples;
