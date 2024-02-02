@@ -1,5 +1,8 @@
 
-/* */
+/* 
+
+
+
 // --------- 19.1: Introduction to string and String VS Array 🔥
 const country = 'Bangla desh';
 const division = 'Rongpur';
@@ -161,5 +164,85 @@ const reversed = sentence.split('').reverse().join("");
 
 console.log(reversed);
 
+*/ 
+
+/***
+ * A JavaScript string is zero or more characters written inside quotes.
+ * JavaScript strings are used for storing and manipulating text.
+ * You can use single or double quotes
+ * Strings can be created as primitives, 
+ * from string literals, or as objects, using the String() constructor
+ * 
+ * 
+ * 
+ * 
+ *  
 
 
+
+👉 How to find the length of a string
+🙋‍♂️ String.prototype.length 🙋‍♂️
+const myName = "Nasihul Nipun";
+console.log(myName.length);
+
+👉 Escape Character
+
+let anySentence = "We are the so-called \"Vikings\" from the north.";
+console.log(anySentence);
+
+ * ***/ 
+
+
+
+
+/*
+
+// String Task not complete
+//Task-1: Count how many times a string has the letter a
+const str = "Bangladesh is beautiful country";
+
+// ------ Way-1: -----
+console.log(str.split('a').length -1);
+
+// ------ Way-2: -----
+let strSentence = "Bangladesh is beAutiful country";
+let strLen = strSentence.length;
+
+let count = 0;
+for(var i = 0; i < strLen; i++){
+    if(strSentence[i] == 'a'){
+        count ++;
+    }
+}
+console.log(count);
+
+// Task-2: Count how many times a string has the letter a or A
+let strSentence = "Bangladesh is beAutiful country";
+let strLen = strSentence.length;
+
+let count = 0;
+for(var i = 0; i < strLen; i++){
+    if(strSentence[i] == 'a' || strSentence[i] == 'A'){
+        count ++;
+    }
+}
+console.log(count);
+
+
+
+// Task-3: Check whether a string contains all the vowels a, e, i, o, u 
+
+let sentence = "Bangladesh is beautiful country";
+
+let count = 0;
+let vowels = "aeiou";
+
+for (var i = 0; i <sentence.length; i++){
+    if(vowels.indexOf(sentence[i]) > -1){
+        count ++;
+        console.log(`Index: ${i} | Letter: ${sentence[i]}`);
+    }
+}
+console.log("Total vowel is: ", count);
+
+*/ 
