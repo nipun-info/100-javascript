@@ -22,8 +22,8 @@ console.log(10 !== '10');
 
 */
 // ----------* Introduction to If Else Condition *---------
-/*
 
+/*
 If statement:The if statement executes a statement if a specified condition is truthy.
 if(true){
     console.log("Code to be executed!!");
@@ -204,6 +204,35 @@ if(!userInput){
     - Burger More than 500tk: Free coke
     - Else Coke: 30tk
 
+    Task-2: BMI Calculator and Health Category
+    Create a JavaScript program that calculates the Body Mass Index (BMI) and assigns a health category based on the BMI value. Use nested if-else statements to determine the health category.
+
+        - Calculate BMI using the formula: BMI = weight (kg) / (height (m))^2
+        - BMI < 18.5, you are underweight.
+        - BMI >= 18.5 and BMI <=24.9, you are normal.
+        - BMI >=25 and BMI <= 29.9, you are overweight.
+        - Otherwise, you are obese.
+
+
+    Task-3: Grade Calculator
+    Create a simple JavaScript program that takes a student's score as input and returns their corresponding grade based on the following grading scale:
+
+        A: 90-100
+        B: 80-89
+        C: 70-79
+        D: 60-69
+        F: 0-59
+
+    Task-4:
+    if you get more then 80 then inside your friend score.
+        If your friend get more than 80. then go for a lunch.
+        if your friend get below 80 but greater than or equal 60 then tell your friend, good luck next time.
+        if your friend get less than 60 but more than or equal to 40 then, keep your friend's message unseen.
+        if your friend get less than 40, block your friend
+        if you get less than 80 go to home and sleep and act sad
+
+    Note:  use nested if-else-if-else
+*/
     // Task-1 Solution:
     let burgerPrice = 550;
     if (burgerPrice >= 500) {
@@ -213,14 +242,7 @@ if(!userInput){
         console.log(" You buy coke 30 taka");
     }
 
-    Task-2: BMI Calculator and Health Category
-    Create a JavaScript program that calculates the Body Mass Index (BMI) and assigns a health category based on the BMI value. Use nested if-else statements to determine the health category.
-
-        - Calculate BMI using the formula: BMI = weight (kg) / (height (m))^2
-        - BMI < 18.5, you are underweight.
-        - BMI >= 18.5 and BMI <=24.9, you are normal.
-        - BMI >=25 and BMI <= 29.9, you are overweight.
-        - Otherwise, you are obese.
+    
     // Task-2 Solution:
 
     // let bmi = weight / (height * height);
@@ -237,16 +259,7 @@ if(!userInput){
         console.log("You are obese.");
     }
 
-    Task-3: Grade Calculator
-    Create a simple JavaScript program that takes a student's score as input and returns their corresponding grade based on the following grading scale:
-
-        A: 90-100
-        B: 80-89
-        C: 70-79
-        D: 60-69
-        F: 0-59
-
-
+    
     // Solution Task-3:
     let grade = 45;
     if(grade >=  90 && grade <= 100 ){
@@ -265,15 +278,6 @@ if(!userInput){
         console.log("You are passed ");
     }
 
-    Task-4:
-    if you get more then 80 then inside your friend score.
-        If your friend get more than 80. then go for a lunch.
-        if your friend get below 80 but greater than or equal 60 then tell your friend, good luck next time.
-        if your friend get less than 60 but more than or equal to 40 then, keep your friend's message unseen.
-        if your friend get less than 40, block your friend
-        if you get less than 80 go to home and sleep and act sad
-
-    Note:  use nested if-else-if-else
 
     // Solution Task-4:
     let score = 38;
@@ -291,6 +295,6 @@ if(!userInput){
         }
     }
 
-*/
+
 
 

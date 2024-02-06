@@ -1,8 +1,6 @@
 
 /* 
 
-
-
 // --------- 19.1: Introduction to string and String VS Array 🔥
 const country = 'Bangla desh';
 const division = 'Rongpur';

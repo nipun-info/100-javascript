@@ -309,3 +309,51 @@ function odd_even(number){
 
 console.log(odd_even(4));
 console.log(odd_even(5));
+
+
+/** -----Module-20: Quiz -------
+ * What Is A JavaScript Function?
+ * How Do You Add Parameters To A JavaScript Function?
+ * In JavaScript, What Is The Primary Difference Between A Function And A Loop?
+ * How Do You Call A JavaScript Function That Takes No Parameters?
+ * In JavaScript, When Should You Use The "Return" Statement In A Function?
+ *  What Is The Correct Syntax For Defining A JavaScript Function?
+ * How Would You Handle Multiple Parameters In A JavaScript Function?
+ * What Is An Argument In The Context Of A JavaScript Function?
+ * In JavaScript, What Happens If A Function Does Not Contain A "Return" Statement?
+ * What Will Happen When This Function Is Called?
+    function getMenu() {
+    console.log("Burger, Pizza, Pasta");
+    }
+
+    A. It will produce an error.
+    B. It will display the menu.
+    C. It will display the menu and return undefined.
+ * 
+ * 
+ * **/
+
+    // example: Object using Function
+// know more about object
+const course = {
+    subject: "javaScript",
+    duration: '2 month',
+    credit: 1.5
+}
+const myArr = ["24"];
+
+function courseDetails(obj){
+    if(typeof obj === 'object' && !Array.isArray(obj)){
+        console.log('Valid input:');
+    }else {
+        return 'Invalid input';
+    }
+    return `Course name is ${obj?.subject}, course duration is ${obj?.duration} `
+}
+
+// console.log(courseDetails());
+// console.log(courseDetails(course));
+// console.log(courseDetails(myArr));
+console.log(courseDetails(course));
+
+

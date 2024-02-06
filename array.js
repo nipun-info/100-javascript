@@ -1,4 +1,6 @@
+
 /*
+
 // ****** JavaScript Array *****
 // ****🔥 array length 🔥****
 const numbers = [99, 88, 55, 80, 44, 66];
@@ -43,7 +45,7 @@ fruits.shift()
 
 
 
-// ----- ***🔥 array includes *** -----
+// ----- ***🔥 array indexOf *** -----
 const programLang = ["Java", "python", "HTML", "CSS", "JavaScript" ];
 const numbers = [99, 88, 55, 80, 44, 66];
 
@@ -311,3 +313,29 @@ for(let i = legends.length -1; i >= 0; i --){
     legend_members_rev.push(legend);   
 }
 console.log(legend_members_rev);
+
+
+
+// Reward section Object
+const course = {
+    subject: "javaScript",
+    duration: '2 month',
+    credit: 1.5
+}
+
+// dot notation
+console.log(course.subject);
+
+// bracket notation
+console.log(course['duration']);
+
+// insert property
+course.price = '$124';
+course['remaining'] = '5 month';
+
+console.log(course);
+
+// property delete
+delete course.credit;
+
+console.log(course);

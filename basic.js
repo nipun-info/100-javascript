@@ -42,4 +42,8 @@ console.log(number[number.length - 1]);
 console.log(number.push(90));
 console.log(number.indexOf(40));
 
-// slice
+
+
+
+// 21.8: Swap Variable, Swap without Temp, Destructing
+
