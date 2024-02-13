@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="m-8">
+    <header class="flex justify-between bg-sky-100 p-4 items-center rounded-md mb-8">
+        <div>
+            <h2 class="text-3xl font-bold">Interactive</h2>
+            <p class="text-lg font-semibold text-zinc-400">Geometry Genius</p>
+        </div>
+        <div>
+            <button class="btn btn-info">Blog</button>
+        </div>
+    </header>
+    <main>
+        <!-- main content container -->
+        <div class="flex flex-col lg:flex-row ">
+            <!-- Shape card container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Triangle -->
+                <div class="card w-88 bg-base-100 shadow-xl mb-4 border-2 px-4">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="text-center p-4 space-y-4">
+                        <h2 class="font-bold">Triangle</h2>
+                        <p class="text-sm font-semibold">Area (A) = 0.5 X b X h</p>
+                        <div class="flex items-center justify-center gap-2">
+                            <input id="triangle-base" class="w-24 text-lg bg-gray-200 p-2 rounded-sm " type="text" placeholder="b">
+                            <span class="mr-2 text-lg font-semibold">cm</span>
+                            <input id="triangle-height" class="w-24 text-lg bg-gray-200 p-2 rounded-sm" type="text" placeholder="h">
+                            <span class="text-lg font-semibold">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">
+                                Area: <span id="triangle-area"></span> <span>cm<sup>2</sup> </span> 
+                            </p>
+                        </div>
+                        <div class="">
+                            <button onclick="calculateTriangleArea()" class="btn btn-info w-full text-white">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            <!-- Area Calculaion container -->
+            <div class="w-96 border-2 border-gray-2 rounded-md">
+                <h3 class="text-3xl text-center p-4 underline">Area calculation</h3>
+            </div>
+        </div>
+    </main>
+
+    <script src="script/triangle.js"></script>
+</body>
+
+</html>
